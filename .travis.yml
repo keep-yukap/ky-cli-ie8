@@ -7,14 +7,14 @@ cache: npm
 
 install: npm
 script:
-
+  - npm build
 
 jobs:
   include:
     - stage: npm release
       if: tag IS present
       node_js: "8"
-      script: ""
+      script: npm build
       before_deploy:
         - cd dist
       deploy:
