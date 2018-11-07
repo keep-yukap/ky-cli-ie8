@@ -1,0 +1,99 @@
+{
+  "name": "@mistong/eui-cli",
+  "version": "0.1.45",
+  "description": "Devtools for eui component",
+  "author": "mistong eui team",
+  "license": "MIT",
+  "scripts": {
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "precommit": "lint-staged",
+    "commit": "npx git-cz",
+    "commitmsg": "commitlint -E GIT_PARAMS",
+    "version": "npm run changelog && git add CHANGELOG.md",
+    "postversion": "git push && git push --tags"
+  },
+  "bin": {
+    "eui": "bin/eui.js"
+  },
+  "files": [
+    "bin",
+    "src"
+  ],
+  "dependencies": {
+    "babel-core": "^6.10.4",
+    "babel-eslint": "^7.2.3",
+    "babel-jest": "^23.2.0",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-import": "^1.9.1",
+    "babel-plugin-transform-runtime": "^6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.3.13",
+    "chalk": "^2.4.1",
+    "commander": "^2.15.1",
+    "css-loader": "^0.26.1",
+    "download": "^7.0.0",
+    "es3ify-loader": "^0.2.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jest": "^21.17.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.8.2",
+    "express": "~4.13.4",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "identity-obj-proxy": "^3.0.0",
+    "inquirer": "^6.0.0",
+    "ip": "^1.1.5",
+    "jest": "^23.2.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.8.3",
+    "pkg-updater": "^1.0.4",
+    "portscanner": "^2.2.0",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^6.0.7",
+    "semver": "^5.5.0",
+    "shelljs": "^0.8.2",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.12.9",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.24.3"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
+    "babel-eslint": "^8.2.5",
+    "commitlint": "^7.2.1",
+    "conventional-changelog-cli": "^2.0.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "subject-case": [
+        0
+      ]
+    }
+  }
+}
