@@ -1,14 +1,14 @@
-# EUI-cli
+# ky-cli-ie8
 
-铭师堂 `EUI` 组件构建工具
+ky-cli-ie8 组件构建工具
 
 # Install
 
-`$ npm i @mistong/eui-cli -g`
+`$ npm i @keepyukap/ky-cli-ie8 -g`
 
 # Usage
 
-* `eui init` 初始化[eui组件模板](https://github.com/MST-EUI/EUI-component-tpl)
-* `eui server` 启动本地开发服务器
-* `eui build` 打包模块
+* `ky-ie8 init` 初始化组件模板
+* `ky-ie8 server` 启动本地开发服务器
+* `ky-ie8 build` 打包模块
 

@@ -1,8 +1,8 @@
 {
-  "name": "@mistong/eui-cli",
-  "version": "0.1.45",
-  "description": "Devtools for eui component",
-  "author": "mistong eui team",
+  "name": "@keepyukap/ky-cli-ie8",
+  "version": "0.1.0",
+  "description": "Devtools for ky-cli-ie8 component",
+  "author": "yukap",
   "license": "MIT",
   "scripts": {
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
@@ -13,7 +13,7 @@
     "postversion": "git push && git push --tags"
   },
   "bin": {
-    "eui": "bin/eui.js"
+    "ky-ie8": "bin/ky-cli-ie8.js"
   },
   "files": [
     "bin",

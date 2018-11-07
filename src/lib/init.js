@@ -13,20 +13,20 @@ const questions = [
     name: 'name', // used for program.command(<name>), required
     message: 'Component Name:',
     default: path.basename(process.cwd()),
-    validate: name => (/^eui-/.test(name)
+    validate: name => (/^ky-/.test(name)
       ? true
-      : log(chalk.yellow('Component Name should start with eui-'))),
+      : log(chalk.yellow('Component Name should start with ky-'))),
   },
   {
     name: 'description',
     message: 'Description:',
-    default: 'An eui component',
+    default: 'An ky component',
   },
 ];
 
 module.exports = {
   name: 'init',
-  description: ' Initialize a eui component template for developer',
+  description: ' Initialize a ky-ie8 component template for developer',
   action: () => {
     const tplType = process.argv[3] || 'pc';
     const tplUrl = /^https?:\/\//.test(tplType) ? tplType : alias[tplType];
@@ -37,7 +37,7 @@ module.exports = {
     }
 
     log('');
-    log('Welcome to eui-component generator!');
+    log('Welcome to ky-ie8-component generator!');
     log('May I ask you some questions?');
     log('');
 
@@ -50,8 +50,8 @@ module.exports = {
         if (/package.json$/.test(file.path.split('/')[1])) {
           const newPkgData = Object.assign({}, JSON.parse(file.data), answer);
           const { name } = newPkgData;
-          const tplName = 'eui-component-tpl';
-          newPkgData.name = `@mistong/${name}`;
+          const tplName = 'rc-tpl-ie8';
+          newPkgData.name = `@keepyukap/${name}`;
           newPkgData.version = '0.1.0';
           newPkgData.repository.url = newPkgData.repository.url.replace(tplName, name);
           newPkgData.bugs.url = newPkgData.bugs.url.replace(tplName, name);

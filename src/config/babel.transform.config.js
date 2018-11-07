@@ -11,7 +11,7 @@ module.exports = babelJest.createTransformer({
     require.resolve('babel-plugin-transform-runtime'),
     [
       require.resolve('babel-plugin-import'), {
-        libraryName: '@mistong/eui',
+        libraryName: '@keepyukap/ky-ie8',
       },
     ],
   ],
