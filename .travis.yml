@@ -7,5 +7,5 @@ cache: npm
 
 install: npm
 script:
-  - npm build
-  - npm test
+  - npm run build
+  - npm run test
