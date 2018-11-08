@@ -7,18 +7,16 @@ cache: npm
 
 install: npm
 script:
-  - npm build
+  - npm test
 
 jobs:
   include:
     - stage: npm release
       if: tag IS present
       node_js: "8"
-      script: npm build
-      before_deploy:
-        - cd dist
+      script: npm publish
       deploy:
-        provider: npm
+        provider: npm publish
         email: "$NPM_EMAIL"
         api_key: "$NPM_TOKEN"
         skip_cleanup: true

@@ -10,7 +10,9 @@
     "commit": "npx git-cz",
     "commitmsg": "commitlint -E GIT_PARAMS",
     "version": "npm run changelog && git add CHANGELOG.md",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "build": "echo \"no build specified\" && exit 0",
+    "test": "echo \"no test specified\" && exit 0"
   },
   "bin": {
     "ky-ie8": "bin/ky-cli-ie8.js"
