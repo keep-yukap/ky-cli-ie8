@@ -2,18 +2,4 @@ language: node_js
 node_js:
   - "8"
   - "9"
-
-cache: npm
-
-install: npm
-
-script:
-  - npm run build
-
-deploy:
-  provider: npm
-  email: "jingweirong8@163.com"
-  api_key: "57b7e7aa-7952-4855-a211-cf9560a6b8a8"
-  skip_cleanup: true
-  on:
-    tags: true
+  - "10"
