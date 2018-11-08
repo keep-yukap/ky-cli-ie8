@@ -1,3 +1,13 @@
+<a name="0.1.7"></a>
+## [0.1.7](https://github.com/keep-yukap/ky-cli-ie8/compare/v0.1.6...v0.1.7) (2018-11-08)
+
+
+### Features
+
+* 🎸 travis-cli ready ([5daecf8](https://github.com/keep-yukap/ky-cli-ie8/commit/5daecf8))
+
+
+
 <a name="0.1.6"></a>
 ## [0.1.6](https://github.com/keep-yukap/ky-cli-ie8/compare/v0.1.5...v0.1.6) (2018-11-08)
 
