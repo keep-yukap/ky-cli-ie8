@@ -1,3 +1,8 @@
+<a name="0.1.6"></a>
+## [0.1.6](https://github.com/keep-yukap/ky-cli-ie8/compare/v0.1.5...v0.1.6) (2018-11-08)
+
+
+
 <a name="0.1.5"></a>
 ## [0.1.5](https://github.com/keep-yukap/ky-cli-ie8/compare/v0.1.4...v0.1.5) (2018-11-08)
 
