@@ -1,5 +1,7 @@
 # ky-cli-ie8
 
+![](https://travis-ci.com/keep-yukap/ky-cli-ie8.svg?branch=master)
+
 ky-cli-ie8 组件构建工具
 
 # Install
