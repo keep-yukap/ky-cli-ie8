@@ -3,3 +3,8 @@ node_js:
   - "8"
   - "9"
   - "10"
+
+deploy:
+  provider: yarn
+  email: "$NPM_EMAIL"
+  api_key: "$NPM_TOKEN"
