@@ -97,5 +97,8 @@
         0
       ]
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
